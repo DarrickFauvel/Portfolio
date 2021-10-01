@@ -13,6 +13,11 @@
     font-size: 2.5rem;
     font-weight: 600;
     transform: rotateZ(20deg);
+    transition: all 350ms ease-in-out;
+}
+.Logo-pop:hover{
+    
+    transform: translateX(5px) rotateZ(-90deg);
 }
 .Logo-margin {
     width: 20px;
