@@ -3,4 +3,22 @@
     font-size: 1.4rem;
     color: #cbff4d;
     font-family: 'Audiowide', cursive;
+    position: relative;
+    transition: all 350ms ease-in-out;
+}
+.Logo-pop {
+    position: absolute;
+    top: -12px;
+    color: #f6f8ff;
+    font-size: 2.5rem;
+    font-weight: 600;
+    transform: rotateZ(20deg);
+}
+.Logo-margin {
+    width: 20px;
+    margin: 0 20px;
+}
+.Logo:hover{
+    cursor: pointer;
+    transform: scale(1.2);
 }

@@ -1,19 +1,13 @@
 import React from 'react'
 import Logo from './Logo'
 import "../Css/Navbar.css"
+import Navmenu from './Navmenu'
 
 function Navbar() {
     return (
         <div className="Navbar">
             <Logo/>
-            <div className="Navbar-menu">
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Skills</li>
-                    <li>Blog</li>
-                </ul>
-            </div>
+            <Navmenu/>
         </div>
     )
 }

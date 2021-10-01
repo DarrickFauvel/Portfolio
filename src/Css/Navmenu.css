@@ -1,0 +1,9 @@
+.Navmenu {
+    flex: 0.6;
+}
+.Navmenu>ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}

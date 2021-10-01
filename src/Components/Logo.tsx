@@ -5,7 +5,10 @@ function Logo() {
     return (
         <div className="Logo">
             <div className="Logo-text">
-                thevinitgupta
+                the
+                <span className="Logo-pop">V</span>
+                <span className="Logo-margin"></span>
+                initgupta
             </div>
         </div>
     )
