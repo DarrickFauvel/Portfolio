@@ -5,7 +5,7 @@ function Logo() {
     return (
         <div className="Logo">
             <div className="Logo-text">
-                VG
+                thevinitgupta
             </div>
         </div>
     )
