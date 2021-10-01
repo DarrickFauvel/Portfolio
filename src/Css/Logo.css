@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+.Logo {
+    flex: 0.3;
+    font-size: 4rem;
+    color: #191923;
+    font-family: 'Rampart One', cursive;
+}
