@@ -1,6 +1,6 @@
 .Logo {
     flex: 0.3;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     color: #cbff4d;
     font-family: 'Audiowide', cursive;
     position: relative;
@@ -10,13 +10,12 @@
     position: absolute;
     top: -12px;
     color: #f6f8ff;
-    font-size: 2.5rem;
+    font-size: 2.7rem;
     font-weight: 600;
     transform: rotateZ(20deg);
     transition: all 350ms ease-in-out;
 }
 .Logo-pop:hover{
-    
     transform: translateX(5px) rotateZ(-90deg);
 }
 .Logo-margin {
@@ -25,7 +24,7 @@
 }
 .Logo:hover{
     cursor: pointer;
-    transform: scale(1.2);
+    transform: scale(1.15);
 }
 
 @media only screen and (max-width : 814px) {
