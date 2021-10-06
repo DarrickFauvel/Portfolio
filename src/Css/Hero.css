@@ -1,0 +1,12 @@
+.Hero {
+    font-family: 'Audiowide', cursive;
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 100px;
+    color: #53F4FF;
+}
+.NotFound{
+    color: #ff85ba;
+    font-size: 5rem;
+    display: block;
+}

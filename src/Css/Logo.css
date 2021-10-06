@@ -1,7 +1,7 @@
 .Logo {
     flex: 0.3;
     font-size: 1.6rem;
-    color: #cbff4d;
+    color: var(--accent-default);
     font-family: 'Audiowide', cursive;
     position: relative;
     transition: all 350ms ease-in-out;
@@ -27,13 +27,19 @@
     transform: scale(1.15);
 }
 
-@media only screen and (max-width : 814px) {
+@media only screen and (max-width : 1135px) {
+    .Logo{
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (max-width : 960px) {
     .Logo-text-left,.Logo-text-right {
         display: none;
     }
     .Logo-pop{
-        font-size: 3.7rem;
-        color: #cbff4d;
+        font-size: 3.8rem;
+        color: var(--accent-default);
         transform: rotateZ(-90deg);
     }
 }

@@ -5,6 +5,14 @@ font-family: 'Black Ops One', cursive;
 font-family: 'Staatliches', cursive;
 font-family: 'Tourney', cursive;
 */
+:root {
+  /* rich-black-fogra-29 */
+  --background-default: #161a27ff; 
+  --accent-blue: rgb(108, 255, 248);
+  --font-default: #ebfdf6;
+  --accent-default: #fffb1b;
+  --fiery-rose: #f45b69ff;
+}
 
 html,body {
   margin: 0;
@@ -13,7 +21,9 @@ html,body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #182628;
+  background-color: var(--background-default);
+  width: 100vw;
+  min-height: 100vh;
 }
 
 code {

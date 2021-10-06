@@ -18,6 +18,7 @@ function Navmenu() {
                 onMouseOut={()=>{setAboutHovered(false)}}
                 >
                     <img alt="about" className="Navmenu-img" style={{display : !aboutHovered?"none" : "block"}} src={About}/>
+                    
                     <span className="Navmenu-text" style={{display : aboutHovered?"none" : "block"}}>About</span>
                 </li>
 
