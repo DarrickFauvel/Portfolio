@@ -15,17 +15,34 @@
 }
 .Hero-body-header{
     width: 80%;
-    font-size: 3.2rem;
+    font-size: 2.6rem;
     font-family: 'Ubuntu', sans-serif;
     color: var(--font-default) ;
     font-weight: 600;
-    opacity: 0.6;
+    opacity: 0.7;
 }
 .rubber {
     display: inline-block;
 }
-.rubber-bounce {
+.rubber:hover{
     color: var(--accent-default);
+}
+.awesome {
+    font-family: 'Audiowide', cursive;
+    color: var(--accent-default);
+    opacity: 1;
+    font-weight: 400;
+    margin: 0 10px;
+    position: relative;
+}
+.w{
+    position: absolute;
+    animation: bouncing 500ms ease-in-out 200ms infinite alternate;
+}
+.w-space{
+    margin: 0 20px;
+}
+.rubber-bounce {
     animation: rubberband 800ms alternate ease-out;
 }
 
@@ -49,6 +66,17 @@
         transform: scaleX(1.05) scaleY(0.95);
     }
     100%{
+        transform: scaleX(1) scaleY(1);
+    }
+}
+
+@keyframes bouncing {
+    0%{
+        top : 5px;
+        transform: scaleX(1.15) scaleY(0.7);
+    }
+    100%{
+        top: -30px;
         transform: scaleX(1) scaleY(1);
     }
 }
