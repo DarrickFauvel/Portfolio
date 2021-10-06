@@ -32,6 +32,9 @@ function Hero() {
                     </span> 
                     Websites for a Living.
                 </div>
+                <div className="Hero-body-text">
+                    I am a Budding Web Developer from India, specializing in MERN stack.
+                </div>
             </div>
         </div>
     )
