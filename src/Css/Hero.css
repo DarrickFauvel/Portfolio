@@ -37,16 +37,6 @@
     margin: 0 10px;
     position: relative;
 }
-.w{
-    position: absolute;
-    animation: bouncing 900ms ease-in-out 800ms infinite alternate;
-}
-.w:hover{
-    animation-play-state: paused;
-}
-.w-space{
-    margin: 0 20px;
-}
 .rubber-bounce {
     animation: rubberband 800ms alternate ease-out;
 }
