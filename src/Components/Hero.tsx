@@ -1,13 +1,9 @@
 import React from 'react'
 import "../Css/Hero.css"
 import Bouncy from './Bouncy'
-import Typed from './Typed';
 
-interface Features {
-    text : Array<string>
-}
 function Hero() {
-    const webFeatures : Features["text"] = ["Awesome","Caffeinated"];
+   
     return (
         <div className="Hero">
             <p className="Hero-head">&#60; Web Developer &#47; &#62;</p>
@@ -28,10 +24,7 @@ function Hero() {
             <div className="Hero-body">
                 <div className="Hero-body-header">
                     Making 
-                    {webFeatures.map((feature:string,index : number)=>{
-                        return <Typed word={feature}/>
-                    })}
-                        
+                    <span className="awesome">Awesome</span>
                     Websites for a Living.
                 </div>
                 <div className="Hero-body-text">
