@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "../Css/Hero.css"
 import Bouncy from './Bouncy'
 
 function Hero() {
-   
+    const [awesomeHovered, setAwesomeHovered] = useState(false);
     return (
         <div className="Hero">
             <p className="Hero-head">&#60; Web Developer &#47; &#62;</p>
@@ -24,7 +24,15 @@ function Hero() {
             <div className="Hero-body">
                 <div className="Hero-body-header">
                     Making 
-                    <span className="awesome">Awesome</span>
+                    <span className={awesomeHovered?"awesome awesome-hovered" :"awesome"} 
+                    onMouseEnter={()=>{
+                        setAwesomeHovered(true);
+                    }} 
+                    
+                    onMouseLeave={()=>{
+                        setAwesomeHovered(false);
+                    }}
+                    >{awesomeHovered? "Versatile": "Awesome"}</span>
                     Websites for a Living.
                 </div>
                 <div className="Hero-body-text">
