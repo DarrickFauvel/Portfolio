@@ -6,8 +6,9 @@ font-family: 'Black Ops One', cursive;
 :root {
   /* rich-black-fogra-29 */
   --background-default: #0d1a2f; 
-  --accent-blue: rgb(108, 255, 248);
+  --accent-blue: #6cfff8;
   --font-default: #ebfdf6;
+  --font-light: #d9ebe4d3;
   --accent-default: #fffb1b;
   --fiery-rose: #f45b69ff;
 }

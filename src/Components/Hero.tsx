@@ -4,7 +4,7 @@ import Bouncy from './Bouncy'
 
 function Hero() {
     const [awesomeHovered, setAwesomeHovered] = useState(false);
-    const [linkHovered,setLinkHovered] = useState(false);
+    const [linkHovered,setLinkHovered] = useState(0);
     return (
         <div className="Hero">
             <p className="Hero-head">&#60; Web Developer &#47; &#62;</p>
@@ -24,7 +24,7 @@ function Hero() {
                 </div>
             <div className="Hero-body">
                 <div className="Hero-body-header">
-                    Making 
+                    Making the Web 
                     <span className={awesomeHovered?"awesome awesome-hovered" :"awesome"} 
                     onMouseEnter={()=>{
                         setAwesomeHovered(true);
@@ -34,19 +34,19 @@ function Hero() {
                         setAwesomeHovered(false);
                     }}
                     >{awesomeHovered? "Versatile": "Awesome"}</span>
-                    Websites for a Living.
                 </div>
                 <div className="Hero-body-text">
-                    I am a Budding Web Developer based in India, cooking up websites. Currently developing websites of Medicinal value at <a id="current-job" href="https://tablt.com/" rel="noreferrer" target="_blank" onMouseEnter={()=>{
-                        setLinkHovered(true);
+                    I am a Budding Web Developer based in India, cooking up websites. Currently developing websites of Medicinal value at 
+                    <span id="current-job" onMouseEnter={()=>{
+                        setLinkHovered(150);
                     }} 
                     onMouseLeave={()=>{
-                        setLinkHovered(false);
-                    }}
+                        setLinkHovered(0);
+                    }} 
                     >
-                        <div className="unederline" style={{width: linkHovered?"100%": "0"}}></div>
+                        <div className="underline" style={{width : `${linkHovered}px`}}></div>
                         Tablt Tech
-                    </a>
+                    </span>
                 </div>
             </div>
         </div>
