@@ -1,10 +1,15 @@
 import React, { useState } from 'react'
 import "../Css/Hero.css"
 import Bouncy from './Bouncy'
+import Social from './Social';
 
 function Hero() {
     const [awesomeHovered, setAwesomeHovered] = useState(false);
     const [linkHovered,setLinkHovered] = useState(0);
+
+    const openWorkWebsite = ()=>{
+        window.open("https://tablt.com/", '_blank');
+    }
     return (
         <div className="Hero">
             <p className="Hero-head">&#60; Web Developer &#47; &#62;</p>
@@ -43,12 +48,14 @@ function Hero() {
                     onMouseLeave={()=>{
                         setLinkHovered(0);
                     }} 
+                    onClick = {openWorkWebsite}
                     >
                         <div className="underline" style={{width : `${linkHovered}px`}}></div>
                         Tablt Tech
                     </span>
                 </div>
             </div>
+            <Social name="leetcode"/>
         </div>
     )
 }

@@ -68,7 +68,9 @@
     border: none;
     position: relative;
 }
-
+#current-job:hover {
+    cursor: pointer;
+}
 .underline{
     position: absolute;
     bottom: 0;
