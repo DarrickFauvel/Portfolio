@@ -1,6 +1,18 @@
 .Hero {
     padding-top: 70px;
     color: var(--font-default);
+    display: flex;
+    justify-content: space-between;
+    height: 80vh;
+    box-sizing: border-box;
+}
+.Hero-left {
+    flex: 0.7;
+    height: 100%;
+}
+.Hero-right {
+    flex: 0.2;
+    height: 100%;
 }
 .Hero-head {
     font-size: 1.2rem;
@@ -8,7 +20,7 @@
     color: var(--accent-blue);
 }
 .Hero-name {
-    font-size: 5.5rem;
+    font-size: 5rem;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 700;
     letter-spacing: 5px;
@@ -16,7 +28,7 @@
 }
 .Hero-body-header{
     width: 90%;
-    font-size: 3.3rem;
+    font-size: 2.3rem;
     font-family: 'Ubuntu', sans-serif;
     color: var(--font-default) ;
     font-weight: 600;
@@ -52,12 +64,13 @@
 }
 
 .Hero-body-text {
-    width: 50%;
+    width: 83%;
     font-size: 1.2rem;
     color: var(--font-light);
     font-family: 'Play',sans-serif;
 }
-#current-job {
+p > #current-job {
+    display: inline-block;
     text-decoration: none;
     font-weight: 600;
     letter-spacing: 2px;
@@ -65,20 +78,32 @@
     margin-left: 5px;
     color: var(--fiery-rose);
     font-family: "Space Mono",monospace;
-    border: none;
     position: relative;
 }
-#current-job:hover {
+p > #current-job:hover {
     cursor: pointer;
 }
-.underline{
+p > #current-job::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 1px;
+    background-color: var(--fiery-rose);
+    position: relative;
+    bottom: 0;
+    transition: 300ms all ease-in-out;
+}
+p > #current-job:hover::after{
+    width: 100%;
+}
+/* .underline{
     position: absolute;
     bottom: 0;
     z-index: 20;
     height: 2px;
     background-color: var(--fiery-rose);
     transition: all 300ms ease-in-out;
-}
+} */
 
 @keyframes rubberband {
     0%{
