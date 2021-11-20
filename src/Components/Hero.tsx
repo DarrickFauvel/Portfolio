@@ -4,9 +4,9 @@ import Bouncy from './Bouncy'
 
 function Hero() {
     const [awesomeHovered, setAwesomeHovered] = useState(false);
-    const [linkHovered,setLinkHovered] = useState(0);
     return (
         <div className="Hero">
+            <div className="Hero-left">
             <p className="Hero-head">&#60; Web Developer &#47; &#62;</p>
             <div className="Hero-name">
                 <Bouncy letter="V"/>
@@ -36,18 +36,14 @@ function Hero() {
                     >{awesomeHovered? "Versatile": "Awesome"}</span>
                 </div>
                 <div className="Hero-body-text">
-                    I am a Budding Web Developer based in India, cooking up websites. Currently developing websites of Medicinal value at 
-                    <span id="current-job" onMouseEnter={()=>{
-                        setLinkHovered(150);
-                    }} 
-                    onMouseLeave={()=>{
-                        setLinkHovered(0);
-                    }} 
+                    <p>I am a Budding Web Developer based in India, cooking up websites. Currently developing websites of Medicinal value at 
+                    <a id="current-job" href="https://tablt.com/" target="_blank" rel="noreferrer"
                     >
-                        <div className="underline" style={{width : `${linkHovered}px`}}></div>
+                        {/* <div className="underline" style={{width : `${linkHovered}px`}}></div> */}
                         Tablt Tech
-                    </span>
+                    </a></p>
                 </div>
+            </div>
             </div>
         </div>
     )

@@ -23,6 +23,7 @@ html,body {
   background-color: var(--background-default);
   width: 100vw;
   min-height: 100vh;
+  position: relative;
 }
 
 code {
