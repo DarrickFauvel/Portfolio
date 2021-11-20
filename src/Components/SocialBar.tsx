@@ -7,13 +7,13 @@ function SocialBar({...props}) {
     return (
         <div className={calledFrom==="index" ? "SocialBar vertical" : "SocialBar horizontal"}>
             <div className="line"></div>
-            <Social name="github"/>
-            <Social name="linkedin"/>
-            <Social name="devto"/>
-            <Social name="leetcode"/>
-            <Social name="twitter"/>
-            <Social name="instagram"/>
-            <div className="line bottom-line"></div>
+            <Social name="github" url="https://github.com/thevinitgupta"/>
+            <Social name="linkedin" url="https://www.linkedin.com/in/thevinitgupta/" />
+            <Social name="devto" url="https://dev.to/thevinitgupta"/>
+            <Social name="leetcode" url="https://leetcode.com/thevinitgupta/" />
+            <Social name="twitter" url="https://twitter.com/thevinitgupta_" />
+            <Social name="instagram" url="https://www.instagram.com/jsdecaf/" />
+            <div className="line"></div>
         </div>
     )
 }
