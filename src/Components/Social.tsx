@@ -7,7 +7,6 @@ function Social({...props}) {
     return (
         <div className="Social">
            <img className="Social-icon" src={icon.default} alt={name} /> 
-           <div className="Social-line"></div>
         </div>
     )
 }

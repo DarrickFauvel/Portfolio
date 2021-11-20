@@ -1,15 +1,9 @@
 import React, { useState } from 'react'
 import "../Css/Hero.css"
 import Bouncy from './Bouncy'
-import Social from './Social';
 
 function Hero() {
     const [awesomeHovered, setAwesomeHovered] = useState(false);
-    // const [linkHovered,setLinkHovered] = useState(0);
-
-    // const openWorkWebsite = ()=>{
-    //     window.open("https://tablt.com/", '_blank');
-    // }
     return (
         <div className="Hero">
             <div className="Hero-left">
@@ -50,14 +44,6 @@ function Hero() {
                     </a></p>
                 </div>
             </div>
-            </div>
-            <div className="Hero-right">
-                <Social name="leetcode"/>
-                <Social name="github"/>
-                <Social name="twitter"/>
-                <Social name="linkedin"/>
-                <Social name="devto"/>
-                <Social name="instagram"/>
             </div>
         </div>
     )
