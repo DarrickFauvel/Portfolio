@@ -96,6 +96,7 @@ p > #current-job::after{
 p > #current-job:hover::after{
     width: 100%;
 }
+
 /* .underline{
     position: absolute;
     bottom: 0;
@@ -138,4 +139,8 @@ p > #current-job:hover::after{
         top: -30px;
         transform: scaleX(1) scaleY(1);
     }
+}
+
+.Hero-body-cta{
+    width: 100%;
 }

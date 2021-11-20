@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import "../Css/Hero.css"
+import BoldBtn from './BoldBtn';
 import Bouncy from './Bouncy'
 
 function Hero() {
@@ -42,6 +43,9 @@ function Hero() {
                         {/* <div className="underline" style={{width : `${linkHovered}px`}}></div> */}
                         Tablt Tech
                     </a></p>
+                </div>
+                <div className="Hero-body-cta">
+                    <BoldBtn text="Hire Me"/>
                 </div>
             </div>
             </div>

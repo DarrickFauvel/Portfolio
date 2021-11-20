@@ -1,0 +1,25 @@
+.BoldBtn{
+    box-sizing: border-box;
+    width: 80%;
+    max-width: 240px;
+    margin: 20px 0;
+    padding: 2% 7%;
+    font-size: 1.4rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+    border: 2px solid var(--accent-blue);
+    border-radius: 5px;
+    color: var(--accent-blue);
+    /* color: var(--background-default); */
+    display: flex;
+    align-items: center;
+}
+.BoldBtn:hover{
+    cursor: pointer;
+}
+.btn-arrow{
+    display: inline-block;
+    font-size: 2rem;
+    margin-left: 10px;
+    transform: rotateZ(90deg);
+}
