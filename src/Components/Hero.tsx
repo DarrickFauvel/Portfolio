@@ -45,7 +45,7 @@ function Hero() {
                     </a></p>
                 </div>
                 <div className="Hero-body-cta">
-                    <BoldBtn text="Hire Me"/>
+                    <BoldBtn text="Hire Me" url="https://www.linkedin.com/in/thevinitgupta/"/>
                 </div>
             </div>
             </div>
