@@ -1,5 +1,6 @@
 .BoldBtn{
     box-sizing: border-box;
+    position: relative;
     width: 80%;
     max-width: 240px;
     margin: 20px 0;
@@ -13,13 +14,45 @@
     /* color: var(--background-default); */
     display: flex;
     align-items: center;
+    overflow: hidden;
+    transition: all 350ms ease-in-out;
+}
+.Btn-text{
+    position: relative;
+    z-index: 1;
 }
 .BoldBtn:hover{
+    color: var(--background-default);
     cursor: pointer;
 }
 .btn-arrow{
     display: inline-block;
     font-size: 2rem;
+    font-weight: 400;
     margin-left: 10px;
     transform: rotateZ(90deg);
+}
+.shutter{
+    position: absolute;
+    z-index: 0;
+    height: 125%;
+    width: 150%;
+    background-color: var(--accent-blue);    
+}
+
+.shutter-tl{
+    left: -150%;
+    transform: rotateZ(205deg);
+    transition: all 250ms ease-in-out;
+}
+.shutter-br {
+    left: 100%;
+    transform: rotateZ(25deg);
+    transition: all 250ms ease-in-out;
+}
+.BoldBtn:hover>.shutter-tl{
+    left: -63%;
+}
+.BoldBtn:hover>.shutter-br {
+    left: 20%;
 }

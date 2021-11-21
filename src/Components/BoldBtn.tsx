@@ -5,8 +5,12 @@ function BoldBtn({...props}) {
     const btnText:string = props.text;
     return (
         <div className="BoldBtn">
-            {btnText} 
-            <div className="btn-arrow">&#8682;</div>
+            <div className="Btn-text">
+                {btnText} 
+                <div className="btn-arrow">&#8682;</div>
+            </div>
+            <div className="shutter shutter-tl"></div>
+            <div className="shutter shutter-br"></div>
         </div>
     )
 }
