@@ -11,7 +11,8 @@ function Hero() {
             <div className="Hero-left">
             <p className="Hero-head">&#60; Web Developer &#47; &#62;</p>
             <div className="Hero-name">
-                {heroHead.map((char, index)=>{
+                
+            {heroHead.map((char, index)=>{
                     if(char==='_') return <span className="space"> </span>;
                     else 
                         return <Bouncy letter={char} key={index}/>
