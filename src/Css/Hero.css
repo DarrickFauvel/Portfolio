@@ -4,7 +4,6 @@
     display: flex;
     justify-content: space-between;
     height: 80vh;
-    box-sizing: border-box;
 }
 .Hero-left {
     flex: 0.7;

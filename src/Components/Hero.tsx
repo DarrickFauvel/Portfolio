@@ -5,23 +5,17 @@ import Bouncy from './Bouncy'
 
 function Hero() {
     const [awesomeHovered, setAwesomeHovered] = useState(false);
+    const heroHead = "Vinit_Gupta.".split("");
     return (
         <div className="Hero">
             <div className="Hero-left">
             <p className="Hero-head">&#60; Web Developer &#47; &#62;</p>
             <div className="Hero-name">
-                <Bouncy letter="V"/>
-                <Bouncy letter="i"/>
-                <Bouncy letter="n"/>
-                <Bouncy letter="i"/>
-                <Bouncy letter="t"/>
-                <span className="space"> </span>
-                <Bouncy letter="G"/>
-                <Bouncy letter="u"/>
-                <Bouncy letter="p"/>
-                <Bouncy letter="t"/>
-                <Bouncy letter="a"/>
-                <Bouncy letter="."/>
+                {heroHead.map((char, index)=>{
+                    if(char==='_') return <span className="space"> </span>;
+                    else 
+                        return <Bouncy letter={char} key={index}/>
+                })}
                 </div>
             <div className="Hero-body">
                 <div className="Hero-body-header">
