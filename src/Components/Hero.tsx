@@ -13,7 +13,7 @@ function Hero() {
             <div className="Hero-name">
                 
             {heroHead.map((char, index)=>{
-                    if(char==='_') return <span className="space"> </span>;
+                    if(char==='_') return <span className="space" key={index}> </span>;
                     else 
                         return <Bouncy letter={char} key={index}/>
                 })}

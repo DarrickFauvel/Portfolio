@@ -9,10 +9,10 @@ function Social({...props}) {
         window.open(url);
     }
 
-    const icon =  require(`../Assets/Social/${name}.svg`)
+    const icon =  require(`../Assets/Social/${name}.png`)
     return (
         <div className="Social" onClick={redirectTo}>
-           <img className="Social-icon" src={icon.default} alt={name} /> 
+           <img className="Social-icon" src={icon} alt={name} /> 
         </div>
     )
 }
