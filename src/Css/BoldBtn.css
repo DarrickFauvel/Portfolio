@@ -35,18 +35,18 @@
 .shutter{
     position: absolute;
     z-index: 0;
-    height: 125%;
-    width: 150%;
+    height: 157%;
+    width: 170%;
     background-color: var(--accent-blue);    
 }
 
 .shutter-tl{
-    left: -150%;
+    left: -170%;
     transform: rotateZ(205deg);
     transition: all 250ms ease-in-out;
 }
 .shutter-br {
-    left: 100%;
+    left: 110%;
     transform: rotateZ(25deg);
     transition: all 250ms ease-in-out;
 }
