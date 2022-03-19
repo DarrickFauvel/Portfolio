@@ -5,10 +5,7 @@ function Work() {
     return (
         <div className='Work'>
             <header className='Work-head'>
-                <span>{`<`}</span>work<span>{`>`}</span>
-            </header>
-            <header className='Work-head'>
-                <span>{`</`}</span>work<span>{`>`}</span>
+                Turning tags to Websites
             </header>
         </div>
     )
